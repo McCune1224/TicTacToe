@@ -1,0 +1,65 @@
+/* generic formattin for the entire page */
+* {margin: 0; 
+    padding: 0; 
+    font-family: 
+    sans-serif; 
+    user-select: none;
+} 
+/* Setting the page's background color */
+html {
+    background-color: #2B2D42; 
+}
+/* Formatting for the Tic-Tac-Toe Title */
+h1 {
+    font-size: 65px;
+    text-align: center;
+    height: 200px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 25px;
+    color: white;
+}
+
+span {
+    font-size: 150px;
+    margin-top: 20px;
+}
+body {
+    width: 1000px;
+    margin: 10px auto;
+    text-align: center;
+    padding: 10px;
+
+}
+div {
+    color: #8D99AE;
+}
+div:hover {
+    color: greenyellow;
+}
+div[id^="row-"] div {
+    width: 200px;
+    height: 200px;
+    border: 1px solid;
+    float: left;
+}
+div[id^="row-"] div:nth-child(1) {border-left: none;}
+div[id^="row-"] div:nth-child(3) {border-right: none;}
+div[id="row-1"] div {border-top: none;}
+div[id="row-3"] div {border-bottom: none;}
+div[id^="row-"] {
+    clear: float;  
+    width: 608px;
+    box-sizing: border-box ;
+    overflow: hidden;
+} 
+
+.main-container {
+    width: 650px;
+    overflow: hidden;
+    margin: 0 auto;
+}
